@@ -6,8 +6,8 @@ ids = ids.replace("[", "").replace("]", "").split(",");
 document.addEventListener("DOMContentLoaded", () => {
     let data = JSON.parse(localStorage.getItem("anagrafica"));
     ids.forEach(id => {
-        document.getElementById(id + "name").textContent = data[id].name;
-        document.getElementById(id + "surname").textContent = data[id].surname;
-        document.getElementById(id + "age").textContent = data[id].age;
+        document.getElementById("0" + id + "name").textContent = data[id].name;
+        document.getElementById("0" + id + "surname").textContent = data[id].surname;
+        document.getElementById("0" + id + "age").textContent = data[id].age;
     });
 });

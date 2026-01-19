@@ -13,28 +13,28 @@ let o4age = document.getElementById("04age");
 
 function send() {
     let data = {
-        "01": {
-            "name": o1name.value,
-            "surname": o1surname.value,
-            "age": o1age.value
+        1: {
+            name: o1name.value,
+            surname: o1surname.value,
+            age: o1age.value
         },
-        "02": {
-            "name": o2name.value,
-            "surname": o2surname.value,
-            "age": o2age.value
+        2: {
+            name: o2name.value,
+            surname: o2surname.value,
+            age: o2age.value
         },
-        "03": {
-            "name": o3name.value,
-            "surname": o3surname.value,
-            "age": o3age.value
+        3: {
+            name: o3name.value,
+            surname: o3surname.value,
+            age: o3age.value
         },
-        "04": {
-            "name": o4name.value,
-            "surname": o4surname.value,
-            "age": o4age.value
+        4: {
+            name: o4name.value,
+            surname: o4surname.value,
+            age: o4age.value
         }
     };
     localStorage.setItem("anagrafica", JSON.stringify(data));
     alert("Dati salvati nel localStorage!");
-    window.location.href = "receive.html?ids=[01,02,03,04]";
+    window.location.href = "receive.html?ids=[1,2,3,4]";
 }
